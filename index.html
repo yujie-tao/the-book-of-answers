@@ -3,18 +3,31 @@
 <head>
 	<title>Book of Answers</title>
 </head>
+
 <body>
-<!-- 
-	<script>
-		$(function(){
-        $.get('answers.txt', function(data){
-            var array = data.split(',');
-            console.log(array);
-        });
-    });
-	</script> -->
+	<h1>Welcome to the book of answers</h1>
+	<button id="getAnswer">Give me the answer.</button>
+	<h2 id="answer" style="display: none"></h2>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="js/readAnswers.js"></script>
+
+	<script>
+		$(document).ready(
+		function(){
+			$("#answer").hide();
+			$('#getAnswer').on('click',function(){
+				 $("#answer").show();
+
+			})
+		}
+			)
+	</script>
 
 </body>
 </html>

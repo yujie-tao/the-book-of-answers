@@ -1,4 +1,5 @@
-
+var allText;
+var answers; 
 
 function readTextFile(file)
 {
@@ -10,8 +11,9 @@ function readTextFile(file)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                var allText = rawFile.responseText;
-                console.log(allText.split("\n"));
+                allText = rawFile.responseText;
+                answers = allText.split("\n");
+                console.log(answers);
             }
         }
     }
@@ -19,3 +21,10 @@ function readTextFile(file)
 }
  
  readTextFile("./answers.txt");
+
+
+ var rand = answers[Math.floor(Math.random() * answers.length)];
+ console.log(rand);
+document.getElementById('answer').innerHTML = rand;
+
+
