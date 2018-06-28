@@ -1,0 +1,75 @@
+html{
+	background-color:#2B2B2B;
+	color: white;
+	width: 12000px;
+}
+
+h1{
+/*	font-family: 'Fredericka the Great', cursive;*/
+	font-size: 3rem;
+	font-family: Fredericka the Great;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*section{
+  margin: 0px;
+  bottom: 0px;
+  width: 4000px;
+  height: 100%;
+ }*/
+
+.headline{
+	/*margin:auto;
+	text-align: center;
+	margin-top:20%;*/
+	 /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;*/
+}
+
+#intro h3{
+	font-family: 'Josefin Slab', serif;
+/*	text-align: center;*/
+	font-weight: 400;
+
+}
+
+button#askQuestion{
+	background-color:transparent;
+	color: white;
+	border:none;
+	font-family: 'Josefin Slab', serif;
+	font-size:1.5rem;
+	cursor: pointer;
+
+	/*	margin: auto;*/
+	/*display: block;*/
+	/*margin-top:40px;*/
+}
+
+button#askQuestion:focus{
+	outline:0;
+}
+
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.section {
+  margin: 0px; 
+  bottom: 0px;
+  width: 100vw;
+  float: left;
+  height: 100%;
+  text-shadow: 1px 1px 2px #f0f0f0;
+}
