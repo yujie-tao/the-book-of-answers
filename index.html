@@ -18,12 +18,12 @@
 
 <body>
 	
-	<div id="home" class="section center-screen">
+	<section id="home" class="section center-screen">
 		<h1 class="headline">book of answers</h1>
 		<button id="askQuestion">[Ask Question]</button>
-	</div>
+	</section>
 
-	<div id="intro" class="section center-screen">
+	<section id="intro getAnswer" class="section center-screen">
 		<h3>
 		Here you have a quesiton that wish to ask
 		</br>[It’s for serious one, not for fun]
@@ -35,9 +35,19 @@
 		</br>the Book will answer that for you
 		</br>it may take couple of seconds
 		</h3>
-	</div>
-		<!-- <button id="getAnswer">Give me the answer</button> -->
+	</section>
+
+	<section id="counting" class="section center-screen">
+		<h1 class="second">3</h1>
 		<h2 id="answer" style="display: none"></h2>
+
+	</section>
+
+<!-- 	<section id="theanswer" class="section center-screen">
+		<h2 id="answer" style="display: none"></h2>
+	</section> -->
+		<!-- <button id="getAnswer">Give me the answer</button> -->
+<!-- 		<h2 id="answer" style="display: none"></h2> -->
 
 
 
@@ -47,6 +57,7 @@
   crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="js/readAnswers.js"></script>
+	<script type="text/javascript" src="js/timer.js"></script>
 
 	<script>
 		$(document).ready(
@@ -55,10 +66,50 @@
 			$('#getAnswer').on('click',function(){
 				 $("#answer").show();
 
-			})
+			});
 		}
 			)
 	</script>
+<!-- 	<script>
+		 $(function() {
+              $('#askQuestion').on('click',function() {
+                var $anchor = $(this);
+                /*
+                if you want to use one of the easing effects:
+                $('html, body').stop().animate({
+                    scrollLeft: $($anchor.attr('href')).offset().left
+                }, 1500,'easeInOutExpo');
+                 */
+                $('html, body').wcrol({
+                  $('this').scrollLeft=10;
+                }, 10000);
+                event.preventDefault();
+              });
+            });
+
+	</script> -->
+
+	<script>
+		$(document).ready(function(){
+    $("#askQuestion").click(function(e){
+        e.preventDefault();
+        $('#askQuestion').scrollLeft(5000);
+    });
+})
+
+
+
+	</script>
+
+	<!-- <script>
+
+		 $(function() {
+              $('#askQuestion').on('click',function() {
+              	$('#home').scrollLeft=200;
+              });
+            });
+	
+	</script> -->
 
 </body>
 </html>

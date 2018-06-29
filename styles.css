@@ -1,7 +1,7 @@
 html{
 	background-color:#2B2B2B;
 	color: white;
-	width: 12000px;
+	width: 302vw;
 }
 
 h1{
@@ -12,12 +12,9 @@ h1{
     text-transform: uppercase;
 }
 
-/*section{
-  margin: 0px;
-  bottom: 0px;
-  width: 4000px;
-  height: 100%;
- }*/
+-webkit-scrollbar { 
+    display: none; 
+}
 
 .headline{
 	/*margin:auto;
@@ -31,12 +28,15 @@ h1{
   min-height: 100vh;*/
 }
 
-#intro h3{
+h3{
 	font-family: 'Josefin Slab', serif;
 /*	text-align: center;*/
 	font-weight: 400;
+	font-size: 1.3rem;
 
 }
+
+
 
 button#askQuestion{
 	background-color:transparent;
@@ -71,5 +71,7 @@ button#askQuestion:focus{
   width: 100vw;
   float: left;
   height: 100%;
-  text-shadow: 1px 1px 2px #f0f0f0;
+}
+#answer{
+	width: 50%;
 }
