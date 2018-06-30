@@ -27,14 +27,20 @@ h1{
   text-align: center;
   min-height: 100vh;*/
 }
-
+/*.container{
+	width: 30%;
+}*/
 h3{
 	font-family: 'Josefin Slab', serif;
 /*	text-align: center;*/
 	font-weight: 400;
 	font-size: 1.3rem;
-
 }
+
+h3 #counting {
+	width: 50%;
+}
+
 
 
 
@@ -72,6 +78,7 @@ button#askQuestion:focus{
   float: left;
   height: 100%;
 }
-#answer{
-	width: 50%;
+
+.wrap{
+	width: 60%
 }
