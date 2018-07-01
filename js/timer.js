@@ -4,7 +4,7 @@ setInterval(function() {
 
   countdown--;
   showText();
-}, 1000);
+}, 3000);
 
 
 function showText(){
@@ -16,7 +16,7 @@ function showText(){
    if(countdown==1){
    	$('.second').text(countdown);
   	$('.setence').html('[Here is the one the Book gives you,</br> are you ready?]');
-
+    $('.instruction').html('Click anywhere to view answer');
  //  	$( "html" ).click(function() {
  //  	$('.second').html($('#answer').text());
  //    $('.setence').html('');
@@ -29,9 +29,12 @@ function showText(){
 
   if(countdown<=0){
 
-  	$('html').click(function(){
-  		$('.second').html($('#answer').text());
+  	$('#counting').click(function(){
+  		$('.second').text($('#answer').text()).fadeIn();
   		$('.setence').html('');
+      $('.instruction').html('');
+  		// $("#answer").addClass('fade-in');
+
   	})
 
   	// document.getElementbByTagName("html").onclick=function(){

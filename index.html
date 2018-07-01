@@ -20,10 +20,10 @@
 	
 	<section id="home" class="section center-screen">
 		<h1 class="headline">book of answers</h1>
-		<button id="askQuestion">[Ask Question]</button>
+		<a href="#intro"><button id="askQuestion">[Ask Question]</button></a>
 	</section>
 
-	<section id="intro getAnswer" class="section center-screen">
+	<section id="intro" class="section center-screen">
 		<h3>
 		Here you have a quesiton that wish to ask
 		</br>[It’s for serious one, not for fun]
@@ -44,6 +44,7 @@
 		[All questions could be answered some day,</br> it’s just a matter of time]
 	    </h3>
 		<h2 id="answer" style="display: none"></h2>
+		<h3 class="instruction"></h2>
 	</div>
 	</section>
 
@@ -62,6 +63,13 @@
 
 	<script type="text/javascript" src="js/readAnswers.js"></script>
 	<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/scroll.js"></script>
+
+	<!-- <script>
+		$("#home").fadeIn(function() {
+  	$(this).text("World").fadeOut();
+	});
+	</script> -->
 
 	<script>
 		$(document).ready(
@@ -74,7 +82,7 @@
 		}
 			)
 	</script>
-<!-- 	<script>
+	<!-- <script>
 		 $(function() {
               $('#askQuestion').on('click',function() {
                 var $anchor = $(this);
