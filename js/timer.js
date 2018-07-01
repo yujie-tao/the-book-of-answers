@@ -1,12 +1,21 @@
-var countdown = 3;
+var countdown = 4;
+var clicked=false;
 
-setInterval(function() {
-  countdown--;
-  showText();
-}, 1000);
+// setInterval(function() {
+//   showText();
+// }, 1000);
+function timer(){
+  setInterval(showText,1000);
+}
+
 
 
 function showText(){
+  countdown--;
+  if(countdown==3){
+  $('.second').html(countdown);
+    $('.setence').html(" [All questions could be answered some day,</br> it’s just a matter of time]");
+  }
 	if(countdown==2){
 	$('.second').html(countdown);
   	$('.setence').html("[And you know the answer,</br> by heart]");
@@ -27,17 +36,20 @@ function showText(){
   // }
 
   if(countdown<=0){
+      
 
   	$('#counting').click(function(){
 
+      if(clicked==false){
       $(".second").html('');
       $('.setence').html('');
       $('.instruction').html('');
        setTimeout(function(){
-       $(".second").html('#answer');
+       $(".second").html($('#answer').text());
        $(".second").addClass("fade-in");
    }, 700);
-
+       clicked=true;
+     }
   	})
 
   	// document.getElementbByTagName("html").onclick=function(){

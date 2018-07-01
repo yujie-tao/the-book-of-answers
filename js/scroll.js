@@ -42,10 +42,10 @@ $("#askQuestion").click(function(){
                 }, 1000);
                 event.preventDefault();
 
-
+                timer();
           
-                showCounting();
-                $('#counting').addClass('fade-in');
+                // showCounting();
+                // $('#counting').addClass('fade-in');
 
               });
             });
