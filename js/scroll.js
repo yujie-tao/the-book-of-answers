@@ -22,6 +22,8 @@ $("#askQuestion").click(function(){
        $("#introtext").html("Here you have a quesiton that wish to ask </br>[It’s for serious one, not for fun] </br></br>Close your eyes</br>and medidate for several seconds</br></br>Click anywhere on the screen whenever you are ready</br>the Book will answer that for you</br>it may take couple of seconds");
        $("#introtext").addClass("fade-in");
    }, 700);
+    $("#introtext").removeClass("fade-in");
+    $("#introtext").html("");
 });
 
 

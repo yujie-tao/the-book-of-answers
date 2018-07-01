@@ -1,4 +1,3 @@
-
 var countdown = 3;
 
 setInterval(function() {
@@ -30,10 +29,14 @@ function showText(){
   if(countdown<=0){
 
   	$('#counting').click(function(){
-  		$('.second').text($('#answer').text()).fadeIn();
-  		$('.setence').html('');
+
+      $(".second").html('');
+      $('.setence').html('');
       $('.instruction').html('');
-  		// $("#answer").addClass('fade-in');
+       setTimeout(function(){
+       $(".second").html('#answer');
+       $(".second").addClass("fade-in");
+   }, 700);
 
   	})
 
