@@ -1,10 +1,10 @@
+
 var countdown = 3;
 
 setInterval(function() {
-
   countdown--;
   showText();
-}, 3000);
+}, 1000);
 
 
 function showText(){
@@ -57,3 +57,15 @@ function showText(){
 
 	// }
 }
+
+//  $(function() {
+//               $('.scroll a').bind('click', function(event) {
+//                countdown = 4;
+//               });
+//             });
+
+
+
+// $('button').on('click', function() {
+//   countdown = 3;
+// });

@@ -37,6 +37,11 @@ h3{
 	font-size: 1.3rem;
 }
 
+a{
+  cursor: default;
+  color: white;
+}
+
 h3 #counting {
 	width: 50%;
 }
