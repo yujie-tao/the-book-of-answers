@@ -1,9 +1,13 @@
-html, body {
+html, body, .wrapper {
     max-width: 100%;
     overflow-x: hidden;
     margin:0px;
     overflow-y:hidden;
 }
+
+/*.wrapper{
+  position: fixed;
+}*/
 
 html{
 	background-color:#2B2B2B;

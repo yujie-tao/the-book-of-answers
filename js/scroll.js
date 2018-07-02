@@ -41,6 +41,6 @@ $("#askQuestion").click(function(){
                 event.preventDefault();
 
                 // timer();
-                showText3();
+                showTimer();
               });
             });
