@@ -5,14 +5,13 @@ var clicked;
 //   showText();
 // }, 1000);
 function timer(){
-  countdown = 4;
+  countdown = 3;
   clicked=false;
 // var clicked=false;
-  setInterval(showText1,4000);
+  setInterval(showText1,2500);
 }
 
 function showText1(){
-   countdown--;
   if(countdown==3){
 
    //  setTimeout(function(){
@@ -39,13 +38,8 @@ function showText1(){
    //    setTimeout(function(){
    //    $('.second').addClass("fade-out");
    //    $('.setence').addClass("fade-out");
-   //    $('.second').text(3);
-   //      $('.setence').html(" [All questions could be answered some day,</br> it’s just a matter of time]");
-     
    // }, 400);
-   //    $('.second').removeClass("fade-out");
-   //    $('.setence').removeClass("fade-out");
-
+     
      
 
    //    setTimeout(function(){
@@ -54,13 +48,15 @@ function showText1(){
      
    // }, 400);
 
-   //    $('.second').removeClass("fade-out");
-   //    $('.setence').removeClass("fade-out");
+      // $('.second').removeClass("fade-out");
+      // $('.setence').removeClass("fade-out");
   }
 
 
   if(countdown==2){
     setTimeout(function(){
+    // $('.second').removeClass("fade-out");
+    //   $('.setence').removeClass("fade-out");
     $('.second').addClass("fade-in");
     $('.setence').addClass("fade-in");
     $('.second').text(2);
@@ -68,6 +64,7 @@ function showText1(){
    }, 300);
     $('.second').removeClass("fade-in");
     $('.setence').removeClass("fade-in");
+
   }
 
   if(countdown==1){
@@ -106,15 +103,24 @@ function showText1(){
           $('.instruction').text("Ask one more");
           $(".second").addClass("fade-in");
    }, 4000);
+
+        $('.instruction').css({"cursor":"pointer"});
+        $('.instruction').click(function() {
+          location.reload();
+
+    });
        
      }
     })
 
     countdown=-1;
+
+    
+    // $(".instruction").attr({
+    //         "href" : "#home",
+    //     });
   }
-
-
- 
+     countdown--;
 }
 
 function showText(){
@@ -173,6 +179,11 @@ function showText(){
    }, 700);
        clicked=true;
         $('.second').removeClass("fade-in");
+
+        $(".instruction").attr({
+            "href" : "#home",
+        });
+
      }
     })
 
