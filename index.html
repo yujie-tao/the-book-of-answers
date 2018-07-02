@@ -28,41 +28,24 @@
 	<div class="scroll2">
 	<a href="#counting">
 	<section id="intro" class="section center-screen">
-				<h3 id="introtext">
-				<!-- Here you have a quesiton that wish to ask
-				</br>[It’s for serious one, not for fun]
-				</br>
-				</br>Close your eyes 
-				</br>and medidate for several seconds
-				</br>
-				</br>Click anywhere on the screen whenever you are ready
-				</br>the Book will answer that for you
-				</br>it may take couple of seconds -->
-				</h3>
+			<h3 id="introtext"></h3>
 	</section>
 	</a>
 	</div>
 
-	<section id="counting" class="section center-screen">
-		<div class="wrap">
-		<h1 class="second"><!-- 3 --></h1>
-		<h3 class="setence">
-		<!-- [All questions could be answered some day,</br> it’s just a matter of time] -->
-	    </h3>
-		<h2 id="answer" style="display: none"></h2>
-		<h3 class="instruction"></h2>
-	</div>
+	<section id="counting" class="section">
+		<div class="hello">
+		<div class="center-screen">
+			<div class="wrap ">
+			<h1 class="second"></h1>
+			<h3 class="setence"></h3>
+			<h2 id="answer" style="display: none"></h2>
+			</div>
+			<h3 class="instruction"> &nbsp </h3>
+			</div>
+			
+		</div>
 	</section>
-
-	</section>
-
-<!-- 	<section id="theanswer" class="section center-screen">
-		<h2 id="answer" style="display: none"></h2>
-	</section> -->
-		<!-- <button id="getAnswer">Give me the answer</button> -->
-<!-- 		<h2 id="answer" style="display: none"></h2> -->
-
-
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -71,65 +54,8 @@
 
 	<script type="text/javascript" src="js/readAnswers.js"></script>
 	<script type="text/javascript" src="js/timer.js"></script>
-		<script type="text/javascript" src="js/scroll.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
 
-	<!-- <script>
-		$("#home").fadeIn(function() {
-  	$(this).text("World").fadeOut();
-	});
-	</script> -->
-
-	<script>
-		$(document).ready(
-		function(){
-			$("#answer").hide();
-			$('#getAnswer').on('click',function(){
-				 $("#answer").show();
-
-			});
-		}
-			)
-	</script>
-	<!-- <script>
-		 $(function() {
-              $('#askQuestion').on('click',function() {
-                var $anchor = $(this);
-                /*
-                if you want to use one of the easing effects:
-                $('html, body').stop().animate({
-                    scrollLeft: $($anchor.attr('href')).offset().left
-                }, 1500,'easeInOutExpo');
-                 */
-                $('html, body').wcrol({
-                  $('this').scrollLeft=10;
-                }, 10000);
-                event.preventDefault();
-              });
-            });
-
-	</script> -->
-
-	<script>
-		$(document).ready(function(){
-    $("#askQuestion").click(function(e){
-        e.preventDefault();
-        $('#askQuestion').scrollLeft(5000);
-    });
-})
-
-
-
-	</script>
-
-	<!-- <script>
-
-		 $(function() {
-              $('#askQuestion').on('click',function() {
-              	$('#home').scrollLeft=200;
-              });
-            });
-	
-	</script> -->
 
 </body>
 </html>

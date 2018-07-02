@@ -1,12 +1,14 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    margin:0px;
+    overflow-y:hidden;
 }
 
 html{
 	background-color:#2B2B2B;
 	color: white;
-	width: 302vw;
+	width: 300vw;
 }
 
 h1{
@@ -40,6 +42,10 @@ h3{
 /*	text-align: center;*/
 	font-weight: 400;
 	font-size: 1.3rem;
+}
+
+h3.instruction{
+  margin-top:0;
 }
 
 a{
@@ -157,5 +163,18 @@ button#askQuestion:focus{
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 600px) {
+    h3{
+      font-size: 1.2rem;
+    }
+
+    h1#answer{
+      font-size: 2.5rem;
+    }
+    .wrap{
+      width: 70%;
+    }
+}  
 
 
