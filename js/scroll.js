@@ -40,6 +40,7 @@ $("#askQuestion").click(function(){
                 }, 1000);
                 event.preventDefault();
 
-                timer();
+                // timer();
+                showText3();
               });
             });
