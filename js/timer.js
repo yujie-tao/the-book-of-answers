@@ -18,7 +18,7 @@ function showText1(){
     setTimeout(function(){
       $('.second').addClass("fade-in");
       $('.setence').addClass("fade-in");
-      $('.second').html(countdown);
+      $('.second').text(3);
         $('.setence').html(" [All questions could be answered some day,</br> it’s just a matter of time]");
    }, 200);
       $('.second').removeClass("fade-in");
@@ -30,7 +30,7 @@ function showText1(){
     setTimeout(function(){
     $('.second').addClass("fade-in");
     $('.setence').addClass("fade-in");
-    $('.second').html(countdown);
+    $('.second').text(2);
     $('.setence').html("[And you know the answer,</br> by heart]");
    }, 200);
     $('.second').removeClass("fade-in");
@@ -41,7 +41,7 @@ function showText1(){
      setTimeout(function(){
     $('.second').addClass("fade-in");
     $('.setence').addClass("fade-in");
-    $('.second').text(countdown);
+    $('.second').text(1);
     $('.setence').html('[Here is the one the Book gives you,</br> are you ready?]');
     $('.instruction').html('Click anywhere to view answer');
    }, 200);
@@ -56,11 +56,11 @@ function showText1(){
         $('.setence').html('');
         $('.instruction').html('');
         setTimeout(function(){
-          $(".second").addClass("fade-in");
           $(".second").html($('#answer').text());
-
+          $(".second").addClass("fade-in");
    }, 700);
        clicked=true;
+        $('.second').removeClass("fade-in");
      }
     })
 
