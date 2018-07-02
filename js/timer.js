@@ -1,11 +1,14 @@
-var countdown = 4;
-var clicked=false;
+var countdown;
+var clicked;
 
 // setInterval(function() {
 //   showText();
 // }, 1000);
 function timer(){
-  setInterval(showText,2000);
+  countdown = 4;
+  clicked=false;
+// var clicked=false;
+  setInterval(showText1,2000);
 }
 
 function showText1(){
@@ -42,6 +45,8 @@ function showText1(){
     $('.setence').html('[Here is the one the Book gives you,</br> are you ready?]');
     $('.instruction').html('Click anywhere to view answer');
    }, 200);
+    $('.second').removeClass("fade-in");
+    $('.setence').removeClass("fade-in");
   }
 
   if(countdown<=0){
@@ -51,8 +56,9 @@ function showText1(){
         $('.setence').html('');
         $('.instruction').html('');
         setTimeout(function(){
-          $(".second").html($('#answer').text());
           $(".second").addClass("fade-in");
+          $(".second").html($('#answer').text());
+
    }, 700);
        clicked=true;
      }
@@ -60,6 +66,7 @@ function showText1(){
 
     countdown=-1;
   }
+
 
  
 }
